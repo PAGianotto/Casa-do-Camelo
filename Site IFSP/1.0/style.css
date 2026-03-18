@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #3a2445;
+}
+
+header{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+}
+.hr1{
+    background-color: darkslateblue;
+    height: 3px;
+    border: none;
+}
+
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.t1{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu{
+    width: 40px;
+    height: 40px;
+    background-color: darkviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.menu1{
+    color: white;
+}
+.img1{
+    height: 60px;
+    width: 60px;
+}
+/* Container Principal do Card */
+.aipom {
+    display: flex; /* Alinha imagem e info lado a lado */
+    align-items: stretch; /* Faz as duas colunas terem a mesma altura */
+    background-color: blueviolet;
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden; /* Garante que nada saia das bordas arredondadas */
+    border: 2px solid #5a2d91; /* Uma borda sutil para destacar */
+}
+
+/* Coluna da Imagem */
+#aipomzin {
+    width: 50%; /* Ocupa metade do card */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Coluna de Informações (Lado Direito) */
+.aipom-info {
+    flex: 1; /* Ocupa o restante do espaço */
+    background-color: #6a1b9a; /* Um roxo um pouco mais escuro para o painel de texto */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Empilha Título, Texto e Botão */
+    justify-content: space-between; /* Espalha os itens (título no topo, botão no fim) */
+    color: white;
+    font-family: sans-serif;
+}
+
+.aipom-titulo {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.aipom-descricao {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Botão de Baixar */
+.btn-baixar {
+    background-color: #d500f9; /* Roxo vibrante igual da imagem */
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn-baixar:hover {
+    background-color: #ea80fc;
+}
+
+.icon {
+    font-size: 20px;
+    color: white;
+}
