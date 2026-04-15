@@ -10,13 +10,22 @@
         <form id = 'gamesformulario'>
             <h2>CADASTRAR GAMES E JUEGOS</h2>
             <label for="nome">Jogo procurado:</label><br>
-            <input type="text" id="nome" name="nome" placeholder="ex. GTA V"><br>
+            <input type="text" id="nome" name="nome" placeholder="ex. GTA V" required><br>
             <label for="description">Descrição do jogo:</label><br>
-            <input type="text" id="description" name="description" placeholder="ex. RPG">
-        </form> 
+            <input type="text" id="description" name="description" placeholder="ex. RPG" required><br>
+            <label for="paragrafo">escreva o paragrafo</label><br>
+            <textarea id="paragrafo" placeholder="Diga"></textarea><br>
+            <button onclick="alterarFundo()">Adicionar</button> 
+
+        </form>
     </div>
     <script>
-        const form = document.getElementById('gamesoformulario')
+        function alterarFundo() {
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white"; // Dica: mude a cor do texto para branco para conseguir ler no fundo preto!
+        }
+        
+        const form = document.getElementById('gamesoformulario');
     </script>
 </body>
 </html>
