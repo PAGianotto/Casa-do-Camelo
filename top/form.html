@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_lindo</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="formulario">
+        <form id = 'gamesformulario'>
+            <h2>CADASTRAR GAMES E JUEGOS</h2>
+            <label for="nome">Jogo procurado:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="ex. GTA V" required><br>
+            <label for="description">Descrição do jogo:</label><br>
+            <input type="url" id="description" name="description" placeholder="imagem" required><br>
+            <label for="paragrafo">escreva o paragrafo</label><br>
+            <textarea id="paragrafo" placeholder="Diga"></textarea><br>
+            <button type="submit">Submit</button>
+            <button onclick="alterarFundo()">fundo preto</button> 
+            
+        </form>
+    </div>
+    <div id="colecao"></div>
+</body>
+</html>
